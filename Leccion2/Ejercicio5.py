@@ -1,5 +1,16 @@
 # EJERCICIO5: Sistema de calificaciones
-calif = float(input('Ingrese una nota del 0 al 10: '))
+while True:
+    try:
+        calif = float(input("Escriba su nota: "))
+    except:
+        print("Debes escribir un número.")
+        continue
+
+    if calif < 0 or 10 < calif:
+        print("Ingrese una nota válida.")
+        continue
+    else:
+        break
 
 if 9 <= calif <= 10:
     print(f'Nota {calif} = A')
