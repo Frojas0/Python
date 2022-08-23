@@ -1,5 +1,5 @@
 '''
-# Sentencia ef/else
+# Sentencia if/else
 condicion = 'Hola'
 if condicion == True:
     print('Condicion verdadera')

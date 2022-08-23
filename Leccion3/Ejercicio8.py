@@ -4,7 +4,7 @@ conteoNegativos = 0
 conteoNeutros = 0
 
 for i in range(0, 10):
-    num = int(input("Digite un nÃºmero "+ str(i+1) + ": "))
+    num = int(input(f"{(i+1)}: Digite un numero: "))
     if num == 0:
         conteoNeutros += 1
     elif num > 0:
