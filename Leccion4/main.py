@@ -190,9 +190,131 @@ print(lista)
 """
 
 # Repaso de tuplas
-
+"""
 tupla = (1, 'hola', 2.50, [1, 2, 78], 4, 'Hola')
 print(tupla)
 
 print(4 in tupla) # Busca un elemento, retorna True/False
+# Dentro de las tuplas podemos usar: index, count, len
+# En tuplas se puede convertir de tupla a lista y de lista a tupla
 
+# Repaso de set o conjunto
+# Para definir un conjunto
+conjunto1 = set()
+conjunto2 = {'bye', }
+conjunto1.add(7)
+conjunto1.add('Hola')
+print(conjunto1)
+conjunto2.add('hola')
+print(conjunto2)
+print(3 not in conjunto2) # Preguntamos si el numiero 3 No esta en el conjunto 1
+
+# Como hacer la igualdad de dos conjuntos
+print(conjunto2 == conjunto1) # Preguntamos si son iguales
+
+# Operaciones en conjuntos
+conjunto3 = conjunto1 | conjunto2 # La linea une los dos conjuntos
+print(conjunto3)
+
+conjunto3 = conjunto1 & conjunto2 # Comprueba elementos en comun y lo guarda en conjunto3
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2 # Asigna el valor que esta en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+conjunto3 = conjunto1 ^ conjunto2 # Son los elementos que estan en los dos conjuntos y no estan compartidos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(conjunto1.issubset(conjunto3)) # Verificamos si un conjunto es subconjunto dentro de otro
+print(conjunto2.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+print(conjunto3.issuperset(conjunto1)) # Verificamos si en un conjunto estan todos los elementos de otro conjunto
+print(conjunto3.issuperset(conjunto2))
+print(conjunto1.issuperset(conjunto3))
+print(conjunto2.issuperset(conjunto3))
+
+# Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en comun
+print(conjunto1.isdisjoint(conjunto2)) # Consultamos si hay elementos en comun
+
+# Convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset # Esto hace que el conjunto sea inmutable
+# No se puede agregar, modificar, ni quitar elementos del conjunto
+"""
+# Repaso Diccionarios
+"""
+diccionarioNuevo = {
+    'Azul' : 'Blue',
+    'Rojo' : 'Red',
+    'Verde': 'Green',
+    'Amarillo' : 'Yellow'
+}
+print(diccionarioNuevo)
+
+# Como eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {'Facundo' : {'edad' : 24, 'Altura' : 1.87}, 'Osvaldo' : [45, 1.85], 'Natalia' : [35, 1.67]}
+print(diccionario2)
+"""
+
+"""
+seleccionArgentina = {
+    10 : {'Nombre' : 'Lionel Messi', 'Edad' : 35, 'Altura' : 1.70, 'Precio' : '50 Millones', 'Posicion' : 'Extremo Derecho'},
+    11 : {'Nombre' : 'Angel Di Maria', 'Edad' : 34, 'Altura' : 1.80, 'Precio' : '12 Millones', 'Posicion' : 'Extremo Derecho'},
+    24 : {'Nombre' : 'Paulo Dybala', 'Edad' : 28, 'Altura' : 1.77, 'Precio' : '35 Millones', 'Posicion' : 'Media Punta'},
+    19 : {'Nombre' : 'Nicolas Otamendi', 'Edad' : 34, 'Altura' : 1.83, 'Precio' : '3.5 Millones', 'Posicion' : 'Defensa Central'},
+    1 : {'Nombre' : 'Franco Armani', 'Edad' : 35, 'Altura' : 1.89, 'Precio' : '3.5 Millones', 'Posicion' : 'Portero'},
+    9 : {'Nombre' : 'Julian Alvarez', 'Edad' : 22, 'Altura' : 1.70, 'Precio' : '51 Millones', 'Posicion' : 'Delantero'},
+    6 : {'Nombre' : 'Germán Pezzella', 'Edad' : 31, 'Altura' : 1.87, 'Precio' : '5 Millones', 'Posicion' : 'Defensa Central'},
+    7 : {'Nombre' : 'Rodrigo De Paul', 'Edad' : 28, 'Altura' : 1.8, 'Precio' : '37 Millones', 'Posicion' : 'Centrocampista'}
+}
+
+for key, value in seleccionArgentina.items():
+    print(key, value)
+
+# Revisamos la cantidad key : values que estan en el diccionario
+print('Cantidad de jugadores cargados: ', end=' ')
+print(len(seleccionArgentina))
+"""
+"""
+# Pilas usando listas
+pila = [1,2,3]
+
+# Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# Sacamos elementos desde el final
+elementoEliminado = pila.pop() # Quita el ultimo elemento y lo asigna a la variable elementoEliminado
+print(f'Sacamos el elemento: {elementoEliminado}')
+print(f'Estado actual de pila: {pila}')
+"""
+
+# Colas con listas
+# Estructuras de datos de tipo fifo (first input / first output)
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+# Agregamos elementos al final de la cola
+cola.append('Natalia')
+cola.append('Jose')
+print(cola)
+
+#Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido y se retira: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido y se retira: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido y se retira: {seRetira}')
+print(cola)
