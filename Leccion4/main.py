@@ -197,9 +197,10 @@ print(tupla)
 print(4 in tupla) # Busca un elemento, retorna True/False
 # Dentro de las tuplas podemos usar: index, count, len
 # En tuplas se puede convertir de tupla a lista y de lista a tupla
-
+"""
 # Repaso de set o conjunto
 # Para definir un conjunto
+"""
 conjunto1 = set()
 conjunto2 = {'bye', }
 conjunto1.add(7)
@@ -263,18 +264,18 @@ diccionario2 = {'Facundo' : {'edad' : 24, 'Altura' : 1.87}, 'Osvaldo' : [45, 1.8
 print(diccionario2)
 """
 
-"""
+
 seleccionArgentina = {
     10 : {'Nombre' : 'Lionel Messi', 'Edad' : 35, 'Altura' : 1.70, 'Precio' : '50 Millones', 'Posicion' : 'Extremo Derecho'},
     11 : {'Nombre' : 'Angel Di Maria', 'Edad' : 34, 'Altura' : 1.80, 'Precio' : '12 Millones', 'Posicion' : 'Extremo Derecho'},
-    24 : {'Nombre' : 'Paulo Dybala', 'Edad' : 28, 'Altura' : 1.77, 'Precio' : '35 Millones', 'Posicion' : 'Media Punta'},
+    21 : {'Nombre' : 'Paulo Dybala', 'Edad' : 28, 'Altura' : 1.77, 'Precio' : '35 Millones', 'Posicion' : 'Media Punta'},
     19 : {'Nombre' : 'Nicolas Otamendi', 'Edad' : 34, 'Altura' : 1.83, 'Precio' : '3.5 Millones', 'Posicion' : 'Defensa Central'},
     1 : {'Nombre' : 'Franco Armani', 'Edad' : 35, 'Altura' : 1.89, 'Precio' : '3.5 Millones', 'Posicion' : 'Portero'},
     9 : {'Nombre' : 'Julian Alvarez', 'Edad' : 22, 'Altura' : 1.70, 'Precio' : '51 Millones', 'Posicion' : 'Delantero'},
     6 : {'Nombre' : 'Germán Pezzella', 'Edad' : 31, 'Altura' : 1.87, 'Precio' : '5 Millones', 'Posicion' : 'Defensa Central'},
     7 : {'Nombre' : 'Rodrigo De Paul', 'Edad' : 28, 'Altura' : 1.8, 'Precio' : '37 Millones', 'Posicion' : 'Centrocampista'}
 }
-
+"""
 for key, value in seleccionArgentina.items():
     print(key, value)
 
@@ -298,6 +299,7 @@ print(f'Estado actual de pila: {pila}')
 """
 
 # Colas con listas
+"""
 # Estructuras de datos de tipo fifo (first input / first output)
 cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
 
@@ -318,3 +320,7 @@ print(cola)
 seRetira = cola.pop(0)
 print(f'Atendido y se retira: {seRetira}')
 print(cola)
+"""
+
+for i in seleccionArgentina:
+    print(f'{i} -> {seleccionArgentina[i]}')
