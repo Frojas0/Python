@@ -1,0 +1,20 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>50</x><y>290</y><w>210</w><h>70</h></coordinates><panel_attributes>persona1: Persona
+nombre: str = 'Facundo'
+apellido: str = 'Rojas;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>290</x><y>70</y><w>210</w><h>190</h></coordinates><panel_attributes>adawd
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>30</y><w>220</w><h>180</h></coordinates><panel_attributes>lt=&lt;.
+&lt;&lt;instanceOf&gt;&gt;</panel_attributes><additional_attributes>200;10;30;120;200;160</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>80</y><w>500</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;-
+a rose is a rose</panel_attributes><additional_attributes>440;40;480;40;480;10;420;10;10;120</additional_attributes></element><element><id>UMLPackage</id><coordinates><x>700</x><y>210</y><w>140</w><h>70</h></coordinates><panel_attributes>EmptyPackage
+--
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLActor</id><coordinates><x>640</x><y>310</y><w>60</w><h>110</h></coordinates><panel_attributes>Actor</panel_attributes><additional_attributes></additional_attributes></element></diagram>
