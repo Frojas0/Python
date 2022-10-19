@@ -40,3 +40,4 @@ persona3.mostrar_detalle()
 # print(persona3._dni) El atributo esta encapsulado, no deberia poder ser llamado fuera de la clase, esto es una mala practica
 # persona3.__nombre El atributo nombre esta totalmente encapsulado
 
+
