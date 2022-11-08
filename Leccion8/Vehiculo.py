@@ -24,8 +24,7 @@ class Vehiculo:  # Clase padre
         self.ruedas = ruedas
 
     def __str__(self):  # Metodo Dunderstr, Override / Sobreescribir
-        return f'[Color: {self.color}] [Ruedas: {self.ruedas}]'
-    # en el return no muestro que es de la clase vehiculo para que las muestras de dato se vean bien
+        return f'Color: {self.color}, Ruedas: {self.ruedas}'
 
 
 class Auto(Vehiculo):  # Clase hija
@@ -34,7 +33,7 @@ class Auto(Vehiculo):  # Clase hija
         self.velocidad = velocidad
 
     def __str__(self):  # Metodo Dunderstr, Override / Sobreescribir
-        return f'Auto = [Velocidad: {self.velocidad}km/h] {super().__str__()}'
+        return f'Auto = Velocidad: {self.velocidad}km/h {super().__str__()}'
 
 
 class Bicicleta(Vehiculo):  # Clase hija
@@ -43,12 +42,12 @@ class Bicicleta(Vehiculo):  # Clase hija
         self.tipo = tipo
 
     def __str__(self):  # Metodo Dunderstr, Override / Sobreescribir
-        return f'Bicicleta = [Tipo: {self.tipo}] {super().__str__()}'
+        return f'Bicicleta = Tipo: {self.tipo}, {super().__str__()}'
 
 
 # CREACION DE OBJETOS Y ASIGNACION DE DATOS
 # Objeto de la clase Vehiculo
-vehiculo1 = Vehiculo('-', '-') # no asigno por que lo hago en las clases Auto/Bicicleta
+vehiculo1 = Vehiculo('-', '-')  # los datos los asigno en las clases Auto/Bicicleta
 
 # Objetos de la clase Auto
 vehiculo2 = Auto("Azul", 4, 120)
@@ -74,5 +73,3 @@ print(vehiculo6)
 print(vehiculo7)
 print(vehiculo8)
 print(vehiculo9)
-
-
